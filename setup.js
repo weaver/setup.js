@@ -13,7 +13,7 @@
 ///
 /// Drop setup.js into ext and add this as the first line of app.js:
 ///
-///     require('./ext/setup.js').app(__dirname);
+///     require('./ext/setup').app(__dirname);
 ///
 /// Now anything in lib or ext is fully accessible.  If your
 /// project is a library rather than an application, it might be
@@ -26,7 +26,7 @@
 ///
 /// Put setup.js into ext, then make this the first line of mylib.js:
 ///
-///     require('../ext/setup.js').app(__dirname + '/..');
+///     require('../ext/setup').app(__dirname + '/..');
 ///
 /// Don't forget to node-waf any C++ extensions in ext!
 
