@@ -1,19 +1,17 @@
 //// setup.js -- add packages to require.paths
 ///
-/// Add library folders and external dependency folders to your
-/// project's require.paths. To use setup.js, put it into your project
-/// and call it from the beginning of your project's entry-point.
+/// Manage library folders and external dependency folders in your
+/// project by including setup.js in your project.  Call it from the
+/// beginning of your project's entry-point to adjust require.paths.
 ///
-///  For example, if you're making an application structured like
-///  this:
+/// For example, if you're making an application structured like this:
 ///
 ///     README
 ///     app.js  # main program
 ///     ext/    # third-party libraries, git submodules, etc.
 ///     lib/    # your code
 ///
-/// Drop setup.js into ext and add this as the first line of
-/// app.js:
+/// Drop setup.js into ext and add this as the first line of app.js:
 ///
 ///     require('./ext/setup.js').app(__dirname);
 ///
